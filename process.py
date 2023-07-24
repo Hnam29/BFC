@@ -3,7 +3,6 @@ import pandas as pd
 import random
 from datetime import date
 import datetime
-from UI import * 
 import plotly.express as px 
 from streamlit_option_menu import option_menu 
 from PIL import Image
@@ -14,6 +13,29 @@ import io
 
 bfc = Image.open('bfc.png')
 st.set_page_config(page_title='Dashboard', page_icon=bfc, layout='wide', initial_sidebar_state='auto')
+def UI():
+    st.markdown("""  
+            
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<div class="container-fluid">
+    <div class="card shadow">
+      <div class="card-body">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="text-secondary", style="text-align:center"> ⚛ BFC PRODUCTS ⚛ </h3>
+          </div>
+        </div>        
+      </div>
+    </div>
+</div>        
+<style>
+div[data-testid="stExpander"] div[role="button"] p
+{
+    font-size: 1.1rem;
+}
+ 
+</style>
+ """, unsafe_allow_html=True)
 UI()
 st.divider()
 todayDate = datetime.date.today()
