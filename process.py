@@ -298,7 +298,7 @@ if selected == 'Analyze':
             'Đơn_giá': float(price)
             }])])
             try:
-                df.to_excel("Titanium_Dioxide.xlsx",index=False)
+                df.to_excel("BFC_Data.xlsx",index=False)
             except:
                 st.warning("Unable to write, Please close your dataset !!")
         else:
